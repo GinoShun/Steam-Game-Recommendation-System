@@ -1,0 +1,15 @@
+games.csv: 
+	['app_id', 'title', 'date_release', 'win', 'mac', 'linux', 'rating', 'positive_ratio', 'user_reviews', 'price_final', 'price_original', 'discount', 'steam_deck']
+	type: Int(Id), String(Name), timestamp, bool, bool, bool, String(Clustered), Int(float?)(%), Int, float, float, float(%), bool.
+
+recommendations.csv: 
+	['app_id', 'helpful', 'funny', 'date', 'is_recommended', 'hours', 'user_id', 'review_id']
+	type: Int(Id), Int, Int, timestamp, bool, float, Int(Id), Int(Id).
+
+users.csv: 
+	['user_id', 'products', 'reviews']
+	type: Int(Id), Int, Int.
+
+games_metadata.json: 
+	['app_id', 'description', 'tags']
+	type: Int(Id), String(NL), String[](Cluster).
