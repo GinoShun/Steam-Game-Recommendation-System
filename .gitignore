@@ -3,3 +3,7 @@ data
 
 # large model
 model/best_ncf_model.h5
+
+# temp model
+model/temp_ncf
+model/temp_resnet
